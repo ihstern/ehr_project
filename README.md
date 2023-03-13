@@ -10,11 +10,10 @@ I chose to use an ORM for this project because I really wanted to practice getti
 
 The project evolved over time mainly to simplify it in some ways to make it functional. My original design in my ER diagram had a loop and included multiple relationships in triangles, for example Users, Patients, and Surgeries, where Users could perform Surgeries and Patients had Surgeries, and Users cared for Patients. Ultimately it felt jumbled and unclear, and while I do want to add more functionality related to that in the future, I thought it was best to start with something more achievable. I redid my ER diagram to remove any loops and streamlined it a little bit. I do think I could have probably cut out more but had difficulty deciding what to sacrifice, so I went into this knowing it was a bit ambitious.
 
-Below I've listed the various HTTP Methods I've created.
+Below I've listed the various HTTP Methods I've created, all functional and designed to mimic basic EHR operations.
 
 HTTP Methods
 
-The following are all functional and designed to mimic basic EHR operations:
 Users:
     * index: GET /users - index of all users and their basic info, including username, department, credentials, and first and last name
     * show: GET /users/(specific user id) - shows the basic info of one specific user
